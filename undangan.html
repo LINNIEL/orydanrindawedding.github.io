@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ori & Rinda</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/countdown.css">
+        <link rel="stylesheet" href="assets/css/lightbox.css">
+    </head>
+
+    <body>
+        <div class="mobile-container">
+            <audio id="background-music" src="assets/music/janji_putih.mp3" autoplay loop></audio>
+            <div class="music-controls">
+                <button id="play-btn" style="display: none;">
+                    <img src="assets/congif/play-btn.png" alt="play-btn" class="play-btn">    
+                </i></button> 
+                <button id="pause-btn">
+                    <img src="assets/congif/pause-btn.png" alt="pause-btn" class="pause-btn">
+                </i></button>
+            </div>
+            <div id="linniel" class="linniel-1 justify-content-end align-items-center d-flex">
+                <p class="kutipan_ayat py-5" 
+                data-aos="fade-up"
+                data-aos-duration="3000">Dasar pernikahan adalah cinta kasih tak bersyarat
+                    yaitu kasih Tuhan, bukan cinta!!! Karena cinta bisa habis, 
+                    tetapi kasih Tuhan kekal selama-lamanya.<br><span class="ayat">"1 Korintus"</span></p>
+            </div>
+            <div class="undangan align-items-center py-5">
+                <div class="undangan-text"
+                data-aos="fade-up"
+                data-aos-duration="3000">
+                    <p>Dengan ini kami mengundang Bapak / Ibu / Saudara / i
+                        untuk menghadiri perikahan Putera dan Puteri kami</p>
+                </div>
+            </div>
+            <div id="linniel" class="linniel-2 justify-content-center align-items-center d-flex">
+                <p class="mt-5"
+                data-aos="fade-up"
+                data-aos-duration="3000">Mempelai Pria</p>
+                <div class="pria py-5 mt-5">
+                    <img src="assets/foto_pengantin/Orias.jpg" alt="Orias Kause" class="orias"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="3000">
+                    <div class="ket mt-5"
+                    data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <p class="nama-pria">Orias Kause, S. Pd</p>
+                        <hr>
+                    <p class="pria-ket text-start mb-5">Anak Kedua dari tiga bersaudara<br>dari <span class="fw-bold">Bpk. Justus Kause</span> dan <span class="fw-bold">Ibu Norlina Liubana</span></p>
+                </div>
+                </div>
+                <div class="dan">&</div>
+            </div>
+            <div id="linniel" class="linniel-3 justify-content-center align-items-center d-flex">
+                <p class="py-5 mt-5">Mempelai Wanita</p>
+                <div class="wanita py-5">
+                    <img src="assets/foto_pengantin/Rinda.jpg" alt="Rinda Kasse" class="rinda"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="3000">
+                    <div class="ket mt-5"
+                    data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <p class="nama-wanita">Peni Triburinda Kasse, A. Md Gz</p>
+                        <hr>
+                    <p class="wanita-ket text-end mb-5">Anak Ke empat dari enam bersaudara <br> dari <span class="fw-bold">Bpk. Daniel Kasse</span> dan <span class="fw-bold">Ibu Josrina J. Tanesib (almh)</span> </p>
+                </div>
+                    </div>
+            </div>
+            <div id="linniel" class="linniel-4  align-items-center d-flex py-5">
+                <div class="jadwal">
+                    <p class="text-start"
+                    data-aos="fade-up"
+                    data-aos-duration="3000">Yang akan dilaksanakan pada :</p>
+                    <hr>
+                    <div id="countdown" class="hitungan-mundur"
+                    data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <p class="countdown">Hitungan mundur ke Acara</p>
+                        <div id='tiles'></div>
+                        <div class="labels">
+                            <li>hari</li>
+                            <li>jam</li>
+                            <li>Menit</li>
+                            <li>detik</li>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/congif/jadwal.png" alt="jadwal-tgl" class="jadwal-tgl" 
+                data-aos="fade-up"
+                data-aos-duration="3000">
+                <div class="jadwal-berkat py-5"
+                data-aos="fade-up"
+                data-aos-duration="3000">
+                    <p>Pemberkatan</p>
+                    <hr>
+                    <p>Pukul 10 : 00 Wita</p>
+                    <p>Gereja Ebenhaezer Kapan</p>
+                    <p>Desa Obesi, Kec. Mollo Utara</p>
+                    <a href="https://maps.app.goo.gl/A4jnBKvr1kcbvpnU9" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Google Maps ke Gereja</a>
+                </div>
+                <div class="jadwal-berkat py-5"
+                data-aos="fade-up"
+                data-aos-duration="3000">
+                    <p>Resepsi</p>
+                    <hr>
+                    <p>Pukul 18 : 00 Wita</p>
+                    <p>Rumah Memepelai wanita</p>
+                    <p>Embun Mollo (belakang Puskesmas lama) <br> Desa Obesi, Kec. Mollo Utara</p>
+                    <a href="https://maps.app.goo.gl/gw5jK2KpWCFKbiib6" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Google Maps ke lokasi Resepsi</a>
+                    <div class="lokasi-maps py-3">
+                    </div>
+                </div>
+                <div class="terima-kasih text-center justify-content-center align-items-center"
+                data-aos="fade-up"
+                data-aos-duration="3000">
+                    <p>
+                    Merupakan suatu kehormatan bagi kami bila
+                    Bapak / Ibu / Saudara / i berkenan hadir untuk 
+                    memberikan Doa Restu bagi kedua Putera Puteri kami
+                    </p>
+                </div>
+            </div>
+            <div id="linniel" class="linniel linniel-5 text-center align-items-center justify-content-end d-flex">
+                <div class="content-mengundang">
+                        <p class="text-start ms-1 turut fw-bold"
+                        data-aos="zoom-in"
+                        data-aos-duration="3000"> Turut Mengundang </p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6 keluarga text-start"
+                            data-aos="fade-up"
+                            data-aos-duration="3000">
+                                <p>Keluarga Besar Kause</p>
+                                <p>Keluarga Besar Liubana</p>
+                                <p>Keluarga Besar Boimau</p>
+                                <p>keluarga Besar Talan</p>
+                                <p>Bapak Yusuf N. Laa</p>
+                            </div>
+                            <div class="col-6 keluarga text-start"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                            data-aos-duration="3000">
+                                <p>Keluarga Besar Kasse</p>
+                                <p>Keluarga Besar Tanesib</p>
+                                <p>Keluarga Besar Oematan</p>
+                                <p>Keluarga Besar Nokas</p>
+                                <p>Keluarga Besar Toto</p>
+                                <p>Bapak. Jitro Edison Kase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="galeri" class="linniel linniel-6 text-center d-flex py-5">
+                    <div class="galeri">
+                        <p class="fw-bold pt-5 mt-5"
+                        data-aos="zoom-in"
+                        data-aos-duration="3000"> Galeri Foto </p>
+                        <div class="container">
+                            <hr>
+                            <div class="row galery text-center justify-content-center g-2 mx-auto pt-3">
+                                <div class="col-6 gallery-item">
+                                    <img src="assets/thumbnail/1.jpg" data-full="assets/foto_pengantin/1.jpg" class="img-fluid" alt="Foto 1" class="foto" 
+                                    data-aos="zoom-out-down"
+                                    data-aos-delay="200"
+                                    data-aos-duration="3000">
+                                </div>
+                                <div class="col-6 gallery-item-2">
+                                    <img src="assets/thumbnail/2.jpg" data-full="assets/foto_pengantin/2.jpg" class="img-fluid mb-1" alt="Foto 2" class="foto" 
+                                    data-aos="zoom-out-down"
+                                    data-aos-delay="300"
+                                    data-aos-duration="3000">
+                                    <img src="assets/thumbnail/3.jpg" data-full="assets/foto_pengantin/3.jpg" class="img-fluid mt-3" alt="Foto 3" class="foto" 
+                                    data-aos="zoom-out-down"
+                                    data-aos-delay="400"
+                                    data-aos-duration="3000">
+                                </div>
+                                
+                                
+                                <div class="col-6 gallery-item-2">
+                                    <img src="assets/thumbnail/4.jpg" data-full="assets/foto_pengantin/4.jpg" class="img-fluid mb-1" alt="Foto 4" class="foto" 
+                                    data-aos="zoom-out-down"
+                                    data-aos-delay="500"
+                                    data-aos-duration="3000">
+                                    <img src="assets/thumbnail/5.jpg" data-full="assets/foto_pengantin/5.jpg" class="img-fluid mt-3" alt="Foto 5"
+                                    data-aos="zoom-out-down"
+                                    data-aos-delay="600"
+                                    data-aos-duration="3000">
+                                </div>
+                                <div class="col-6 gallery-item">
+                                    <img src="assets/thumbnail/6.jpg" data-full="assets/foto_pengantin/6.jpg" class="img-fluid" alt="Foto 5" class="foto" 
+                                    data-aos="zoom-out-down"
+                                    data-aos-delay="700"
+                                    data-aos-duration="3000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="lightbox">
+                        <span class="close-btn">&times;</span>
+                        <span class="prev-btn">&#10094;</span>
+                        <span class="next-btn">&#10095;</span>
+                        <img id="lightbox-img" src="">
+                    </div>
+                    <div id="linniel" class="linniel-7 justify-content-center align-items-center d-flex">
+                        <div class="yang-berbahagia">
+                            <img src="assets/foto_pengantin/yang-bebahagia.png" alt="yang-berbahagia" class="yang-berbahagia" 
+                            data-aos="zoom-in"
+                            data-aos-duration="3000">
+                            <p class="yang_1 mt-3" 
+                            data-aos="fade-up"
+                            data-aos-duration="3000">Yang Berbahagia</p>
+                            <p class="Nama-Pengantin"
+                            data-aos="fade-up"
+                        data-aos-duration="3000">Ori & Rinda</p>
+                        </div>
+                    </div>
+                    <footer class="footer text-white">
+                        <div class="footer-line"></div>
+                        <div class="container text-center">
+                            <hr>
+                            <p class="text-dark">&copy; LINNIEL. All rights reserved.</p>
+                        </div>
+                    </footer>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/lightbox.js"></script>
+        <script src="assets/js/music.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
