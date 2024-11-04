@@ -30,8 +30,15 @@ window.addEventListener("load", function() {
         setTimeout(function() {
             loading.style.display = "none";
             content.style.display = "block";
-        }, 500); 
+        }, 5000); 
     }, 5000); 
 });
 
-
+function copyAccountNumber() {
+    const accountNumber = "473201007406539";
+    navigator.clipboard.writeText(accountNumber).then(() => {
+      alert("Nomor rekening berhasil disalin!");
+    });
+  }
+  
+  
